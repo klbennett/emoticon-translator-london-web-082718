@@ -11,10 +11,10 @@ def load_library(filepath)
   dictionary
 end
 
-def get_japanese_emoticon(file, emoticon)
-  library = load_library(file)
-   if library["get_emoticon"].keys.include?(emoticon)
-    library["get_emoticon"][emoticon]
+def get_japanese_emoticon(filepath, emoticon)
+  dictionary = load_library(filepath)
+   if dictionary["get_emoticon"].keys.include?(emoticon)
+    dictionary["get_emoticon"][emoticon]
   else
     "Sorry, that emoticon was not found"
   end
