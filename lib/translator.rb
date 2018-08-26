@@ -16,7 +16,7 @@ new_library = load_library('./lib/emoticons.yml')
 
   if new_library.keys.include?(input)
     binding.pry
-   new_library["get emoticon"]
+   new_library["get emoticon"][input]
   else
     "Sorry, that emoticon was not found"
 end
