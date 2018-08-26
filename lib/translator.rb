@@ -12,7 +12,7 @@ def load_library(filepath)
 end
 
 def get_japanese_emoticon(filepath, input)
-new_library = load_library('./lib/emoticons.yml')
+new_library = load_library(filepath)
 
   if new_library.keys.include?(input)
     binding.pry
