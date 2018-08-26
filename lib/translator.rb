@@ -15,7 +15,7 @@ def get_japanese_emoticon(load_library, input)
 new_library = load_library('./lib/emoticons.yml')
 
   if new_library["get emoticon"].keys_include?(input)
-   returns new_library["get emoticon"]
+   new_library["get emoticon"]
   else
     "Sorry, that emoticon was not found"
 end
