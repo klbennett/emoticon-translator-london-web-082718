@@ -22,7 +22,7 @@ end
 
 def get_english_meaning(filepath, input)
   dictionary = load_library(filepath)
-   if dictionary["get_meaning"]keys.include?(input)
+   if dictionary["get_meaning"].keys.include?(input)
     dictionary["get_meaning"][input]
   else
     "Sorry, that meaning was not found"
