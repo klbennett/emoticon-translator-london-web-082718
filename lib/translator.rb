@@ -11,7 +11,7 @@ def load_library(filepath)
   dictionary
 end
 
-def get_japanese_emoticon(load_library, input)
+def get_japanese_emoticon(filepath, input)
 new_library = load_library('./lib/emoticons.yml')
 
   if new_library.keys.include?(input)
